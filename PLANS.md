@@ -14,10 +14,17 @@
   - [ ] `php artisan migrate --seed`
   - [ ] `php artisan serve`
 
-## Fase 2 — Seguridad y autenticación
-- [ ] Instalar scaffolding de auth básica (Blade).
-- [ ] Ajustar layout con Bootstrap.
-- [ ] Validar login/logout local.
+## Fase 2 — Gestión de Alumnos
+- [x] CRUD completo de alumnos (DNI, nombres, apellidos, correo, teléfono, programa, nivel).
+- [x] Validaciones con Form Requests (`StoreStudentRequest`, `UpdateStudentRequest`).
+- [x] Búsqueda rápida por DNI en listado.
+- [x] Historial académico relacionado (`academic_histories`).
+- [x] Importación masiva CSV/Excel con `maatwebsite/excel`.
+- [x] Prevención de duplicados por DNI en altas e importaciones.
+- [x] Proveedor RENIEC desacoplado (interfaz + mock).
+- [x] Registro de actividad de alumnos (alta/edición/eliminación).
+- [x] Panel Bootstrap con tabla paginada.
+- [x] Actualizar documentación de importación en `README.md`.
 
 ## Fase 3 — Roles y permisos
 - [ ] Instalar `spatie/laravel-permission`.
